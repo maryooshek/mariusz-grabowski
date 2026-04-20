@@ -48,7 +48,7 @@ export default function RoleMatch() {
 
         {/* Role selector — editorial number tabs */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 mb-12"
+          className="grid grid-cols-3 gap-2 sm:gap-3 mb-12"
           role="tablist"
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
@@ -66,21 +66,21 @@ export default function RoleMatch() {
               whileTap={{ scale: 0.985 }}
               whileHover={{ y: -4, scale: 1.01 }}
               transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
-              className={`relative min-h-[88px] text-left px-5 py-4 transition-all duration-200 border ${
+              className={`relative min-h-[84px] sm:min-h-[88px] text-left px-3 sm:px-5 py-3 sm:py-4 transition-all duration-200 border ${
                 active === i
                   ? 'border-field bg-field-pale text-ink shadow-[0_8px_22px_rgba(59,88,52,0.08)]'
                   : 'border-rule/80 bg-paper text-ink-light hover:text-ink-mid hover:border-rule hover:bg-surface'
               }`}
             >
-              <span className="flex items-start gap-3">
-                <span className={`font-cormorant font-semibold text-xl leading-none ${active === i ? 'text-field' : 'text-ink-ghost'}`}>
+              <span className="flex items-start gap-2 sm:gap-3">
+                <span className={`font-cormorant font-semibold text-lg sm:text-xl leading-none ${active === i ? 'text-field' : 'text-ink-ghost'}`}>
                   {r.number}
                 </span>
                 <span className="min-w-0">
-                  <span className={`block font-medium text-sm leading-snug ${active === i ? 'text-ink' : 'text-ink-mid'}`}>
+                  <span className={`block font-medium text-[13px] sm:text-sm leading-snug ${active === i ? 'text-ink' : 'text-ink-mid'}`}>
                     {r.shortTitle}
                   </span>
-                  <span className="block mt-1 font-mono text-2xs uppercase tracking-widest text-ink-light">
+                  <span className="hidden sm:block mt-1 font-mono text-2xs uppercase tracking-widest text-ink-light">
                     {r.subtitle}
                   </span>
                 </span>
