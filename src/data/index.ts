@@ -100,7 +100,7 @@ export const strengthsData = [
   {
     icon: 'Languages',
     title: 'Komunikacja Wielojęzyczna',
-    text: 'Polski (ojczysty), angielski (biegły), czeski i rosyjski (B2). Praca przy materiałach przygotowywanych w ponad 30 wersjach językowych dla globalnych firm.',
+    text: 'Polski (ojczysty), angielski (biegły), czeski i rosyjski (B2). Wieloletnia praca przy materiałach przygotowywanych dla wielu rynków i odbiorców językowych.',
     color: 'green' as const,
   },
   {
@@ -176,7 +176,7 @@ export const experienceData = [
       'Animacje i dokumentacja techniczna dla ABB — szkolenia BHP dla branży przemysłowej',
       'Lokalizacja modułów e-learningowych dla Toyota, Scania, John Deere i BRP',
       'Scenariuszowe kursy gamifikowane dla Cabinet Office i Network Rail (UK)',
-      'Pełne cykle lokalizacyjne obejmujące ponad 30 wersji językowych — After Effects, Premiere, InDesign',
+      'Pełne cykle lokalizacyjne dla wielu rynków i wersji językowych — After Effects, Premiere, InDesign',
     ],
     relevance: 'Mocne doświadczenie w sektorze przemysłowym i technicznym, bardzo przydatne dla komunikacji produktowej, filmów instruktażowych i materiałów pokazujących maszyny w praktyce.',
     accentColor: 'green' as const,
@@ -305,7 +305,7 @@ export const skillGroupsData = [
     color: 'green' as const,
     tier: 'core' as const,
     description: 'Wielojęzyczne procesy obejmujące przygotowanie, adaptację i kontrolę jakości treści dla różnych rynków.',
-    skills: ['30+ wersji językowych', 'Proces lokalizacji', 'Wielojęzyczny DTP', 'Synchronizacja lektoratu', 'Transkreacja', 'Adaptacja kulturowa'],
+    skills: ['Projekty wielojęzyczne', 'Proces lokalizacji', 'Wielojęzyczny DTP', 'Synchronizacja lektoratu', 'Transkreacja', 'Adaptacja kulturowa'],
   },
   {
     category: 'Zarządzanie & Proces',
@@ -392,8 +392,8 @@ export const projectThemesData = [
   {
     icon: 'Globe',
     title: 'Wielojęzyczne Materiały Szkoleniowe',
-    description: 'Pełne lokalizacje materiałów e-learningowych i dokumentacji w ponad 30 wersjach językowych, z synchronizacją lektoratów i dostosowaniem układu treści.',
-    tags: ['30+ wersji', 'DTP', 'Lokalizacja'],
+    description: 'Pełne lokalizacje materiałów e-learningowych i dokumentacji dla wielu rynków, z synchronizacją lektoratów i dostosowaniem układu treści.',
+    tags: ['Wiele rynków', 'DTP', 'Lokalizacja'],
     color: 'green' as const,
   },
   {

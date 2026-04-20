@@ -63,9 +63,9 @@ export default function Languages() {
                   className="block font-cormorant font-semibold text-gold leading-none mb-1"
                   style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}
                 >
-                  30+
+                  10+
                 </span>
-                <span className="font-mono text-2xs uppercase tracking-widest text-ink-light">Wersji językowych</span>
+                <span className="font-mono text-2xs uppercase tracking-widest text-ink-light">Lat pracy po angielsku</span>
               </div>
             </div>
           </motion.div>
