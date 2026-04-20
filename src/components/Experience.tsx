@@ -81,10 +81,10 @@ export default function Experience() {
 
               <div className="mt-8 text-sm text-ink-mid leading-relaxed space-y-4">
                 <p>
-                  To nie jest pełna lista stanowisk, lecz świadomie zbudowana historia kompetencji: od komunikacji wizualnej, przez dokumentację i lokalizację, po multimedia oraz pracę na styku produktu i użytkownika.
+                  To wybrane etapy kariery, które najlepiej pokazują, jak rozwijałem kompetencje: od komunikacji wizualnej, przez dokumentację i lokalizację, po multimedia oraz pracę na styku produktu i użytkownika.
                 </p>
                 <p>
-                  Dzięki temu rekruter widzi nie tylko gdzie pracowałem, ale przede wszystkim dlaczego te doświadczenia są dziś istotne dla JOSKIN.
+                  Każdy z tych etapów wnosi coś, co dziś mogę wykorzystać w pracy dla JOSKIN: precyzję, komunikację, dokumentację, multimedia albo doświadczenie pracy wielojęzycznej.
                 </p>
               </div>
             </motion.div>
@@ -200,8 +200,8 @@ export default function Experience() {
                   Wcześniejsze etapy
                 </p>
                 <p className="text-sm text-ink-mid leading-relaxed">
-                  <span className="font-medium text-ink">1996–2000</span>
-                  {' '}— Wydawnictwo „Omega” oraz SDL Poland / Lomac. To wtedy zbudowałem fundament warsztatu DTP, składu wielojęzycznego i pracy z dokumentacją techniczną, który później rozwijałem w środowiskach międzynarodowych.
+                  <span className="font-medium text-ink">1996–1998</span>
+                  {' '}— Wydawnictwo „Omega”, Bydgoszcz. To tam zacząłem budować warsztat projektowy i wydawniczy, który później rozwinąłem w stronę DTP, dokumentacji technicznej i pracy wielojęzycznej.
                 </p>
               </motion.div>
             </motion.div>

@@ -172,7 +172,7 @@ export default function Hero() {
           >
             {/* Stats row */}
             <div className="flex flex-wrap gap-x-7 gap-y-4">
-              {[
+              {[ 
                 { n: '20+', l: 'lat' },
                 { n: '4', l: 'języki robocze' },
                 { n: '3', l: 'role' },
@@ -199,7 +199,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-3">
               <button onClick={() => go('#dopasowanie')} className="btn-primary">
-                Dlaczego pasuję do 3 ról?
+                Dlaczego pasuję do tych ról?
                 <ArrowDownRight size={14} strokeWidth={1.5} />
               </button>
               <button onClick={() => go('#kontakt')} className="btn-ghost">

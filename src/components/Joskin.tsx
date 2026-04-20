@@ -99,7 +99,7 @@ export default function Joskin() {
           >
             „JOSKIN szuka pracowników, dla których{' '}
             <span className="not-italic font-semibold text-field-light">wszechstronność jest plusem</span>.
-            Właśnie tak opisałbym swój profil zawodowy. Aplikowanie na trzy stanowiska nie wynika u mnie z przypadkowości, lecz z realnego przecięcia się moich kompetencji z potrzebami firmy — a rola twórcy treści szczególnie dobrze pokazuje tę synergię."
+            Właśnie tak opisałbym swój profil zawodowy. Trzy stanowiska, na które aplikuję, wynikają z realnego przecięcia się moich kompetencji z potrzebami firmy — a rola twórcy treści szczególnie dobrze pokazuje tę spójność."
           </blockquote>
 
           {/* JOSKIN's 4 values echoed */}

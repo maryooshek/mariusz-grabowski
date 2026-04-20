@@ -48,7 +48,7 @@ export default function Skills() {
               label="Narzędzia i technologie"
               number="06"
               title="Warsztat zbudowany przez dekady"
-              subtitle="Pogrupowany, nie wysypany — bo liczy się hierarchia i kontekst, nie ilość znaczków."
+              subtitle="Uporządkowany według realnych obszarów pracy: od multimediów i dokumentacji po web, lokalizację i koordynację projektów."
             />
 
             <motion.div
@@ -57,17 +57,17 @@ export default function Skills() {
               transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
             >
               <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">
-                Jak czytać ten zestaw
+                Układ kompetencji
               </p>
               <div className="space-y-4 text-sm text-ink-mid leading-relaxed">
                 <p>
-                  To nie jest chmura przypadkowych słów kluczowych. Każda grupa odpowiada rzeczywistemu obszarowi pracy: od produkcji materiałów, przez dokumentację, po publikację i lokalizację.
+                  Każda grupa odpowiada konkretnemu obszarowi pracy: od produkcji materiałów, przez dokumentację, po publikację i lokalizację.
                 </p>
                 <p>
-                  Najpierw pokazuję obszary kluczowe dla mojego dzisiejszego profilu, a niżej kompetencje uzupełniające, które wzmacniają samodzielność i zakres działania.
+                  Najpierw pokazuję obszary kluczowe dla mojego obecnego profilu, a niżej kompetencje uzupełniające, które poszerzają zakres działania.
                 </p>
                 <p>
-                  W części webowej celowo pokazuję także technologie, z którymi pracuję obecnie. Sama ta strona została przygotowana jako praktyczna próbka sposobu myślenia o strukturze, estetyce i wdrożeniu front-endowym.
+                  W części webowej pokazuję również technologie, z którymi pracuję obecnie. Sama strona stanowi przykład mojego podejścia do struktury, estetyki i wdrożenia front-endowego.
                 </p>
               </div>
             </motion.div>

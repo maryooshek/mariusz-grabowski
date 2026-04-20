@@ -49,7 +49,7 @@ export default function Contact() {
                 Jestem otwarty na rozmowę o tym, w którym obszarze mógłbym wnieść największą wartość do JOSKIN Polska. Najnaturalniej odnajduję się na styku komunikacji, multimediów, dokumentacji i pracy wielojęzycznej.
               </p>
               <p className="text-ink-mid leading-relaxed">
-                Chętnie opowiem szerzej o swoim doświadczeniu, sposobie pracy i o tym, jak mój profil może przełożyć się na praktyczne wsparcie firmy w jednej lub kilku z tych ról.
+                Chętnie opowiem szerzej o swoim doświadczeniu, sposobie pracy i o tym, jak mój profil może przełożyć się na praktyczne wsparcie firmy w tej roli lub na styku kilku obszarów.
               </p>
             </motion.div>
 
@@ -101,7 +101,7 @@ export default function Contact() {
               whileHover={{ y: -5, scale: 1.01 }}
               transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">Ta prezentacja została przygotowana dla:</p>
+              <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">Aplikacja przygotowana dla:</p>
               <p className="font-cormorant font-semibold text-ink text-xl mb-1">JOSKIN Polska Sp. z o.o.</p>
               <p className="text-sm text-ink-mid mb-1">ul. Gorzowska 62, 64-980 Trzcianka</p>
               <p className="text-sm text-ink-mid">Praca stacjonarna w regionie, który jest dla mnie realnie dostępny.</p>

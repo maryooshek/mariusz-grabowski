@@ -72,9 +72,9 @@ export default function Strengths() {
             className="lg:sticky lg:top-28"
           >
             <SectionHeader
-              label="Propozycja wartości"
+              label="Najważniejsze atuty"
               number="04"
-              title="Co wnoszę — i czym się wyróżniam"
+              title="Co wnoszę do zespołu"
               subtitle="Nie zestaw przypadkowych umiejętności, lecz spójny profil specjalisty, który rozumie treść, formę, technologię i język jednocześnie."
             />
 

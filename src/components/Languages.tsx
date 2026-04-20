@@ -36,7 +36,7 @@ export default function Languages() {
               label="Języki"
               number="07"
               title="Wielojęzyczność jako rdzeń profilu"
-              subtitle="Nie wyuczone formułki, lecz język jako realne narzędzie pracy: ponad dekada w środowiskach anglosaskich, projekty lokalizowane na dziesiątki rynków i studia w Pradze."
+              subtitle="Języki jako realne narzędzie pracy: ponad dekada w środowiskach anglosaskich, projekty lokalizowane na dziesiątki rynków i studia w Pradze."
             />
 
             <div className="space-y-4 text-sm text-ink-mid leading-relaxed mb-10">

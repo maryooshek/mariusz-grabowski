@@ -33,7 +33,7 @@ export default function About() {
                 className="font-cormorant italic text-ink/80 leading-snug"
                 style={{ fontSize: 'clamp(18px, 2.2vw, 26px)' }}
               >
-                „Nie szukam wąskiej niszy. Szukam środowiska, w którym wszechstronność jest atutem — i właśnie w takim kierunku odczytuję potrzeby JOSKIN."
+                „Nie szukam wąskiej niszy. Szukam środowiska, w którym wszechstronność naprawdę przekłada się na wartość pracy."
               </p>
             </blockquote>
 

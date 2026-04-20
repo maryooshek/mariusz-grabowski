@@ -77,7 +77,7 @@ export const roleMatchData = [
     subtitle: 'Front-end · Interfejsy · Wsparcie IT',
     badge: 'Rola rozwojowa z mocnymi podstawami pokrewnymi',
     intro:
-      'Traktuję tę rolę jako świadome przejście w stronę bardziej technicznej pracy. CV pokazuje solidne podstawy w obszarze front-endu, publikacji cyfrowych i interfejsów, a obecnie rozwijam ten kierunek także w praktyce z wykorzystaniem Reacta, Next.js i Vite.',
+      'Traktuję tę rolę jako naturalny krok w stronę bardziej technicznej pracy. CV pokazuje solidne podstawy w obszarze front-endu, publikacji cyfrowych i interfejsów, a obecnie rozwijam ten kierunek także w praktyce z wykorzystaniem Reacta, Next.js i Vite.',
     directFit: [
       'HTML/CSS/XHTML — praktyczna praca przy treściach cyfrowych, systemach pomocy online i publikacji materiałów do środowisk webowych',
       'Projektowanie układu interfejsów — doświadczenie będące częścią szerszego warsztatu UX i komunikacji wizualnej',
@@ -86,7 +86,7 @@ export const roleMatchData = [
       'Biegły angielski — swobodne czytanie dokumentacji i komunikacja w środowisku technicznym',
     ],
     transferable: [
-      'React, Next.js i Vite traktuję jako realny kierunek rozwoju front-endowego; ta strona jest również świadomym przykładem takiego podejścia w praktyce',
+      'React, Next.js i Vite rozwijam jako realny kierunek pracy front-endowej; ta strona jest również praktycznym przykładem takiego podejścia',
       'Myślenie zorientowane na użytkownika — doświadczenie w projektowaniu interfejsów e-learningowych i struktur informacji',
       'Precyzja, logika i dbałość o detal — kluczowe zarówno w DTP, jak i przy pracy z kodem front-endowym',
       'Wszechstronność techniczna dobrze wpisuje się w ogłoszenie łączące web, sprzęt, wsparcie użytkowników i ogólną ciekawość IT',
@@ -124,7 +124,7 @@ export const strengthsData = [
   {
     icon: 'Code',
     title: 'Podstawy Front-end',
-    text: 'HTML/CSS/XHTML, React, Next.js, Vite, projektowanie interfejsów, systemy pomocy online (RoboHelp), Google Analytics — praktyczne zaplecze publikacji cyfrowej i pracy blisko front-endu, którego przykładem jest także ta strona.',
+    text: 'HTML/CSS/XHTML, React, Next.js, Vite, projektowanie interfejsów, systemy pomocy online (RoboHelp), Google Analytics — praktyczne zaplecze publikacji cyfrowej i pracy blisko front-endu, widoczne również na przykładzie tej strony.',
     color: 'green' as const,
   },
   {
@@ -237,6 +237,20 @@ export const experienceData = [
     accentColor: 'green' as const,
   },
   {
+    period: '12.2000 — 05.2002',
+    role: 'DTP Senior Specialist',
+    company: 'SDL Poland (former Lomac Sp. z o.o.)',
+    location: 'Bydgoszcz, Polska',
+    highlights: [
+      'Tworzenie, redakcja i formatowanie wielojęzycznej dokumentacji technicznej dla różnych rynków europejskich',
+      'Wdrażanie zmian na podstawie pakietów danych technicznych, rysunków i propozycji aktualizacji dokumentacji',
+      'Przygotowanie dokumentów do tłumaczenia oraz końcowy skład instrukcji użytkownika po procesie lokalizacji',
+      'Praca w Adobe FrameMaker, InDesign, QuarkXPress, Illustrator i Word przy dokumentacji wymagającej dużej precyzji',
+    ],
+    relevance: 'Bardzo ważny etap budowania warsztatu DTP i dokumentacji technicznej — fundament późniejszej pracy z lokalizacją, instrukcjami i materiałami produktowymi.',
+    accentColor: 'amber' as const,
+  },
+  {
     period: '11.1998 — 11.2000',
     role: 'Senior Graphic Designer',
     company: 'International Fair of Pomorze & Kujawy',
@@ -282,7 +296,7 @@ export const skillGroupsData = [
     icon: 'Code',
     color: 'amber' as const,
     tier: 'supporting' as const,
-    description: 'Zaplecze publikacji cyfrowej, struktur treści i interfejsów, uzupełnione o praktyczną pracę z nowoczesnym front-endem. Ta strona również stanowi próbkę takiego podejścia.',
+    description: 'Zaplecze publikacji cyfrowej, struktur treści i interfejsów, uzupełnione o praktyczną pracę z nowoczesnym front-endem, również na przykładzie tej strony.',
     skills: ['React', 'Next.js', 'Vite', 'HTML/CSS/XHTML', 'Projektowanie interfejsów', 'Adobe RoboHelp', 'Google Analytics', 'DITA/XML'],
   },
   {

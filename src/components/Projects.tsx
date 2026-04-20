@@ -33,8 +33,8 @@ export default function Projects() {
           <SectionHeader
             label="Co potrafię tworzyć"
             number="08"
-            title="Rodzaje materiałów z mojego warsztatu"
-            subtitle="Nie portfolio z jednej branży, lecz przekrojowy obraz tego, co tworzę — bo właśnie ta szerokość jest moją wartością."
+            title="Rodzaje materiałów, które tworzę"
+            subtitle="Przekrojowy wybór obszarów pracy: od materiałów szkoleniowych i dokumentacji po multimedia, interfejsy i komunikację wizualną."
           />
         </motion.div>
 
