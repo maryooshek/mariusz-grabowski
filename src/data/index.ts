@@ -48,19 +48,19 @@ export const roleMatchData = [
     subtitle: 'Multimedia · Wideo · Komunikacja Wizualna',
     badge: 'Mocne dopasowanie z potencjałem terenowym',
     intro:
-      'To rola, w której mój warsztat wizualny i multimedialny jest najmocniejszy. Choć nie wywodzę się zawodowo z branży rolniczej, łączę doświadczenie w komunikacji technicznej z gotowością do pracy terenowej, regularnych wyjazdów i prawem jazdy kategorii T.',
+      'To rola, w której mój warsztat wizualny i multimedialny jest najmocniejszy. Choć nie wywodzę się zawodowo z branży rolniczej, łączę doświadczenie w komunikacji technicznej z gotowością do pracy terenowej, regularnych wyjazdów i prawem jazdy kategorii B i T.',
     directFit: [
       'Adobe After Effects, Premiere Pro i Audition — profesjonalna produkcja animacji, wideo i materiałów audio',
       'Tworzenie materiałów instruktażowych i filmów objaśniających dla sektorów technicznych i przemysłowych, w tym projektów lokalizowanych dla John Deere',
       'Dokumentacja techniczna przekształcana w angażujące materiały wizualne — infografiki, diagramy, animacje procesów i komunikację produktową',
       'Praca nad materiałami targowymi, promocyjnymi i informacyjnymi — od koncepcji po finalny skład i publikację',
-      'Prawo jazdy kategorii T i gotowość do pracy w terenie — ważne praktyczne wsparcie przy realizacji zdjęć, filmów i prezentacji maszyn',
+      'Prawo jazdy kategorii B i T oraz gotowość do pracy w terenie — ważne praktyczne wsparcie przy realizacji zdjęć, filmów i prezentacji maszyn',
       'Fotografia dokumentalna i podróżnicza jako stałe zainteresowanie rozwijające oko do kadru, obserwacji i narracji wizualnej',
     ],
     transferable: [
       'Nie deklaruję praktyki stricte rolniczej, ale mam doświadczenie w upraszczaniu złożonych tematów technicznych do formy zrozumiałej dla odbiorcy i użytkownika końcowego',
       'Doświadczenie z sektorem maszyn, automatyki i przemysłu daje mi dobry punkt wyjścia do szybkiego wdrożenia w produkty JOSKIN oraz ich praktyczne zastosowanie',
-      'Prawo jazdy kategorii T wzmacnia praktyczne dopasowanie do pracy przy materiałach tworzonych wokół maszyn, pokazów i działań terenowych',
+      'Prawo jazdy kategorii B i T wzmacnia praktyczne dopasowanie do pracy przy materiałach tworzonych wokół maszyn, pokazów i działań terenowych',
       'Wielojęzyczność przy tworzeniu treści — napisy, lokalizacja, wersje językowe dla różnych rynków',
       'Samodzielna organizacja pracy projektowej, gotowość do nauki produktu i swoboda pracy z ekspertami merytorycznymi',
     ],
@@ -160,7 +160,7 @@ export const strengthsData = [
   {
     icon: 'Truck',
     title: 'Gotowość do Pracy Terenowej',
-    text: 'Prawo jazdy kategorii T, swoboda pracy przy materiałach realizowanych poza biurem i gotowość do pokazywania produktów w realnym użyciu.',
+    text: 'Prawo jazdy kategorii B i T, swoboda pracy przy materiałach realizowanych poza biurem i gotowość do pokazywania produktów w realnym użyciu.',
     color: 'green' as const,
   },
 ]
@@ -449,7 +449,7 @@ export const joskinPointsData = [
   {
     icon: 'Map',
     title: 'Teren i produkt, nie tylko biurko',
-    text: 'Prawo jazdy kategorii T i gotowość do regularnych wyjazdów sprawiają, że mogę nie tylko opracować materiał na podstawie założeń, ale również uczestniczyć w jego realizacji bliżej produktu i użytkownika.',
+    text: 'Prawo jazdy kategorii B i T oraz gotowość do regularnych wyjazdów sprawiają, że mogę nie tylko opracować materiał na podstawie założeń, ale również uczestniczyć w jego realizacji bliżej produktu i użytkownika.',
     color: 'green' as const,
   },
   {
