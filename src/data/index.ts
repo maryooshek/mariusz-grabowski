@@ -36,7 +36,7 @@ export const roleMatchData = [
       'Doświadczenie we współpracy między działami — z inżynierami, marketingiem, sprzedażą i zespołami prawnymi',
     ],
     tools: ['MS Office (Word, Excel)', 'Angielski (biegły)', 'Czeski (B2)', 'Rosyjski (B2)', 'Zarządzanie dokumentami', 'Komunikacja wielojęzyczna'],
-    value: 'Kandydat z mocnym zapleczem komunikacyjnym i organizacyjnym, który może szybko wejść w zadania administracyjne, koordynacyjne i międzydziałowe.',
+    value: 'Szybkie wejście w zadania administracyjne, obieg dokumentów i komunikację z różnymi stronami bez długiego wdrożenia językowego czy organizacyjnego.',
   },
   {
     id: 'content',
@@ -65,7 +65,7 @@ export const roleMatchData = [
       'Samodzielna organizacja pracy projektowej, gotowość do nauki produktu i swoboda pracy z ekspertami merytorycznymi',
     ],
     tools: ['Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Audition', 'Adobe Photoshop', 'Adobe Illustrator', 'Grafika ruchoma'],
-    value: 'Najbardziej naturalne dopasowanie warsztatowe po stronie multimediów i komunikacji wizualnej, dziś dodatkowo wzmocnione gotowością do pracy terenowej i praktycznym warunkiem, którego to ogłoszenie rzeczywiście wymaga.',
+    value: 'Samodzielne tworzenie materiałów, które pokazują produkt atrakcyjnie i zrozumiale — od ujęcia tematu, przez realizację, po gotowy materiał do publikacji, także w kontekście pracy terenowej.',
   },
   {
     id: 'web',
@@ -92,7 +92,7 @@ export const roleMatchData = [
       'Wszechstronność techniczna dobrze wpisuje się w ogłoszenie łączące web, sprzęt, wsparcie użytkowników i ogólną ciekawość IT',
     ],
     tools: ['React', 'Next.js', 'Vite', 'HTML/CSS/XHTML', 'Projektowanie interfejsów', 'Google Analytics', 'XML/DITA'],
-    value: 'Profil pokrewny wobec ogłoszenia: mocny po stronie treści cyfrowych, interfejsów i pracy z dokumentacją, dziś dodatkowo wzmacniany praktycznym rozwijaniem umiejętności webowych w nowoczesnym stacku front-endowym.',
+    value: 'Połączenie zmysłu interfejsowego, pracy z treścią cyfrową i rozwijanego warsztatu React / Next.js / Vite, które pozwala wejść w tę rolę od strony praktycznej i dalej szybko rosnąć technicznie.',
   },
 ]
 

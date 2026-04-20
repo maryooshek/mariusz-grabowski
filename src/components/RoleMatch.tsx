@@ -187,7 +187,7 @@ export default function RoleMatch() {
             {/* Value footer */}
             <div className={`surface-panel px-8 py-5 border-l-4 ${accent.valueBorder}`}>
               <p className="text-sm text-ink-mid italic">
-                <span className="font-medium not-italic text-ink">Wartość dla pracodawcy: </span>
+                <span className="font-medium not-italic text-ink">Praktyczna wartość w tej roli: </span>
                 {role.value}
               </p>
             </div>
