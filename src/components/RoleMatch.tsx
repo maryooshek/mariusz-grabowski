@@ -5,16 +5,14 @@ import { SectionHeader, revealUp, stagger } from './SectionWrapper'
 
 type AccentColor = 'green' | 'amber'
 
-const accentMap: Record<AccentColor, { num: string; tag: string; dot: string; valueBorder: string }> = {
+const accentMap: Record<AccentColor, { num: string; dot: string; valueBorder: string }> = {
   green: {
     num: 'text-field/20',
-    tag: 'tag-field',
     dot: 'bg-field',
     valueBorder: 'border-l-field',
   },
   amber: {
     num: 'text-gold/20',
-    tag: 'tag-gold',
     dot: 'bg-gold',
     valueBorder: 'border-l-gold',
   },
@@ -117,7 +115,6 @@ export default function RoleMatch() {
               <div className="relative">
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
                   <div>
-                    <span className={`inline-block mb-3 ${accent.tag}`}>{role.badge}</span>
                     <h3
                       className="font-cormorant font-semibold text-ink leading-tight"
                       style={{ fontSize: 'clamp(22px, 3vw, 36px)' }}
@@ -177,7 +174,7 @@ export default function RoleMatch() {
                   <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-3">Narzędzia kluczowe</p>
                   <div className="flex flex-wrap gap-1.5">
                     {role.tools.map(t => (
-                      <span key={t} className={accent.tag}>{t}</span>
+                      <span key={t} className={role.accentColor === 'green' ? 'tag-field' : 'tag-gold'}>{t}</span>
                     ))}
                   </div>
                 </div>
