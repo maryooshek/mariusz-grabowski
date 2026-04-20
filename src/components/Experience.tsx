@@ -25,7 +25,7 @@ export default function Experience() {
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="doswiadczenie" ref={ref} className="relative py-24 md:py-32 bg-paper section-seam overflow-hidden">
+    <section id="doswiadczenie" ref={ref} className="relative py-24 md:py-32 bg-paper section-seam">
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -239,7 +239,7 @@ export const experienceData = [
   {
     period: '12.2000 — 05.2002',
     role: 'DTP Senior Specialist',
-    company: 'SDL Poland (former Lomac Sp. z o.o.)',
+    company: 'SDL Poland / Lomac Sp. z o.o.',
     location: 'Bydgoszcz, Polska',
     highlights: [
       'Tworzenie, redakcja i formatowanie wielojęzycznej dokumentacji technicznej dla różnych rynków europejskich',
