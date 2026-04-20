@@ -67,7 +67,7 @@ export default function Skills() {
                   Najpierw pokazuję obszary kluczowe dla mojego obecnego profilu, a niżej kompetencje uzupełniające, które poszerzają zakres działania.
                 </p>
                 <p>
-                  W części webowej pokazuję również technologie, z którymi pracuję obecnie. Sama strona stanowi przykład mojego podejścia do struktury, estetyki i wdrożenia front-endowego.
+                  W części webowej pokazuję również technologie, z którymi pracuję obecnie. Ta strona jest praktycznym przykładem mojego podejścia do struktury, estetyki i wdrożenia front-endowego.
                 </p>
               </div>
             </motion.div>

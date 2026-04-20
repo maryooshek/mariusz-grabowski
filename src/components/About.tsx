@@ -42,7 +42,7 @@ export default function About() {
                 Zacząłem jako grafik — od layoutów i DTP w wydawnictwie, przez projekty dla targów branżowych, także rolniczo-przemysłowych, do technicznych instrukcji i dokumentacji produktowej. To nauczyło mnie, że dobra komunikacja wizualna wymaga rozumienia zarówno <em>treści</em>, jak i <em>formy</em>.
               </p>
               <p>
-                Z czasem profil ewoluował: od jednego języka roboczego do regularnej pracy przy materiałach przygotowywanych w ponad 30 wersjach językowych. Od materiałów drukowanych do interaktywnych modułów szkoleniowych, animacji i systemów cyfrowych. Od lokalnego klienta do globalnych marek w farmacji, motoryzacji, sektorze publicznym i projektach związanych z techniczną komunikacją produktową.
+                Z czasem ten profil wyraźnie się poszerzał: od jednego języka roboczego do projektów realizowanych dla wielu rynków i odbiorców. Od materiałów drukowanych do interaktywnych modułów szkoleniowych, animacji i systemów cyfrowych. Od lokalnego klienta do globalnych marek w farmacji, motoryzacji, sektorze publicznym i projektach związanych z techniczną komunikacją produktową.
               </p>
               <p>
                 Dziś mam szeroki profil zawodowy: rozumiem zarówno potrzeby komunikacyjne organizacji, jak i narzędzia, które pozwalają te potrzeby skutecznie realizować.

@@ -97,9 +97,8 @@ export default function Joskin() {
             className="font-cormorant italic text-dark-text leading-tight mb-8 max-w-4xl"
             style={{ fontSize: 'clamp(20px, 3vw, 34px)' }}
           >
-            „JOSKIN szuka pracowników, dla których{' '}
-            <span className="not-italic font-semibold text-field-light">wszechstronność jest plusem</span>.
-            Właśnie tak opisałbym swój profil zawodowy. Trzy stanowiska, na które aplikuję, wynikają z realnego przecięcia się moich kompetencji z potrzebami firmy — a rola twórcy treści szczególnie dobrze pokazuje tę spójność."
+            „Najmocniej wypadają te role, w których można połączyć komunikację, treści produktowe, dokumentację i multimedia.
+            Właśnie w takim obszarze moje doświadczenie jest dziś najbardziej użyteczne i najlepiej pokazuje jego spójność.”
           </blockquote>
 
           {/* JOSKIN's 4 values echoed */}

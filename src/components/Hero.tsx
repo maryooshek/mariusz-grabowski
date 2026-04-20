@@ -173,9 +173,9 @@ export default function Hero() {
             {/* Stats row */}
             <div className="flex flex-wrap gap-x-7 gap-y-4">
               {[ 
-                { n: '20+', l: 'lat' },
+                { n: '20+', l: 'lat doświadczenia' },
                 { n: '4', l: 'języki robocze' },
-                { n: '3', l: 'role' },
+                { n: '3', l: 'obszary dopasowania' },
               ].map((s, i) => (
                 <motion.div
                   key={s.l}

@@ -46,10 +46,10 @@ export default function Contact() {
               transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
             >
               <p className="text-ink-mid leading-relaxed mb-4">
-                Jestem otwarty na rozmowę o tym, w którym obszarze mógłbym wnieść największą wartość do JOSKIN Polska. Najnaturalniej odnajduję się na styku komunikacji, multimediów, dokumentacji i pracy wielojęzycznej.
+                Jestem otwarty na rozmowę o tym, w jakim obszarze mógłbym najlepiej wesprzeć JOSKIN Polska. Najnaturalniej odnajduję się tam, gdzie spotykają się komunikacja, multimedia, dokumentacja i praca wielojęzyczna.
               </p>
               <p className="text-ink-mid leading-relaxed">
-                Chętnie opowiem szerzej o swoim doświadczeniu, sposobie pracy i o tym, jak mój profil może przełożyć się na praktyczne wsparcie firmy w tej roli lub na styku kilku obszarów.
+                Chętnie opowiem szerzej o swoim doświadczeniu, sposobie pracy i o tym, jak mój profil może przełożyć się na konkretne wsparcie zespołu w tej roli albo na styku kilku obszarów.
               </p>
             </motion.div>
 
@@ -134,7 +134,7 @@ export default function Contact() {
                 ))}
               </div>
               <p className="text-sm text-ink-mid leading-relaxed mt-6 pt-5 border-t border-rule/80">
-                Najmocniej widzę swoją wartość tam, gdzie łączą się treści produktowe, komunikacja techniczna, multimedia i współpraca z różnymi działami.
+                Najmocniej odnajduję się tam, gdzie łączą się treści produktowe, komunikacja techniczna, multimedia i współpraca z różnymi działami.
               </p>
             </motion.div>
           </motion.div>
@@ -153,7 +153,7 @@ export default function Contact() {
             <span className="text-sm text-ink-mid">Mariusz Grabowski</span>
           </div>
           <p className="font-mono text-2xs text-ink-light text-center sm:text-right">
-            Strona stworzona jako część aplikacji do JOSKIN Polska Sp. z o.o. · Piła, 2026
+            Prezentacja kandydata przygotowana na potrzeby rekrutacji do JOSKIN Polska Sp. z o.o. · Piła, 2026
           </p>
         </motion.div>
       </div>

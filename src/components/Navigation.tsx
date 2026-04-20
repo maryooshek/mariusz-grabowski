@@ -105,14 +105,16 @@ export default function Navigation() {
         role="banner"
       >
         <nav
-          className="flex items-center justify-between gap-3 px-3 sm:px-4 py-2"
+          className={`px-3 sm:px-4 py-2 ${isCompactNav ? 'flex items-center justify-between gap-3' : 'grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3'}`}
           aria-label="Nawigacja główna"
         >
           {/* Logo */}
           <button
             onClick={() => handleNav('#home')}
             aria-label="Mariusz Grabowski — Strona główna"
-            className="flex shrink-0 items-center gap-2.5 pr-3 mr-1 border-r border-rule group"
+            className={`flex shrink-0 items-center gap-2.5 group ${
+              isCompactNav ? 'pr-3 mr-1 border-r border-rule' : 'justify-self-start pr-3 mr-1 border-r border-rule'
+            }`}
           >
             <span className="font-cormorant font-semibold text-base text-ink group-hover:text-field transition-colors">
               MG
@@ -121,7 +123,7 @@ export default function Navigation() {
 
           {/* Desktop links */}
           {!isCompactNav && (
-          <ul className="flex items-center justify-center flex-1 min-w-0" role="list">
+          <ul className="flex items-center justify-center min-w-0 justify-self-center" role="list">
             {navItems.map((item) => {
               const isActive = activeSection === item.href.slice(1)
               return (
@@ -150,7 +152,7 @@ export default function Navigation() {
 
           {/* CTA */}
           {!isCompactNav && (
-          <div className="shrink-0 pl-1 ml-1 border-l border-rule">
+          <div className="shrink-0 justify-self-end pl-1 ml-1 border-l border-rule">
             <button
               onClick={() => handleNav('#kontakt')}
               className="px-4 py-1.5 bg-field text-paper text-xs font-medium rounded-full tracking-wide hover:bg-field-light transition-colors duration-200"

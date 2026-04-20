@@ -86,7 +86,7 @@ export default function Strengths() {
                 Profil, który łączy komunikację, wizualizację, technologię i języki w jednym, dojrzałym warsztacie.
               </p>
               <div className="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-rule/80">
-                {[['20+', 'Lat'], ['4', 'Języki robocze'], ['10+', 'Lat pracy po angielsku']].map(([v, l]) => (
+                {[['20+', 'Lat doświadczenia'], ['4', 'Języki robocze'], ['10+', 'Lat pracy po angielsku']].map(([v, l]) => (
                   <div key={l}>
                     <span
                       className="block font-cormorant font-semibold text-field leading-none"

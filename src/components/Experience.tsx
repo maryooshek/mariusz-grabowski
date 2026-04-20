@@ -35,8 +35,8 @@ export default function Experience() {
           <SectionHeader
             label="Historia zawodowa"
             number="05"
-            title="Ponad 20 lat w liczbach i miejscach"
-            subtitle="Starannie wyselekcjonowane etapy kariery — te, które najsilniej definiują mój dzisiejszy profil i wartość dla JOSKIN."
+            title="Ponad 20 lat doświadczenia zawodowego"
+            subtitle="Najważniejsze etapy kariery, które najlepiej pokazują rozwój mojego warsztatu: od komunikacji wizualnej i DTP po dokumentację, multimedia i pracę wielojęzyczną."
           />
         </motion.div>
 
@@ -62,8 +62,8 @@ export default function Experience() {
               <div className="mt-8 pt-6 border-t border-rule/80 grid sm:grid-cols-3 gap-5">
                 {[
                   ['20+', 'lat doświadczenia'],
-                  ['30+', 'wersji językowych'],
-                  ['3', 'obszary dopasowania do JOSKIN'],
+                  ['4', 'języki robocze'],
+                  ['10+', 'lat pracy po angielsku'],
                 ].map(([value, label]) => (
                   <div key={label}>
                     <span
@@ -84,7 +84,7 @@ export default function Experience() {
                   To wybrane etapy kariery, które najlepiej pokazują, jak rozwijałem kompetencje: od komunikacji wizualnej, przez dokumentację i lokalizację, po multimedia oraz pracę na styku produktu i użytkownika.
                 </p>
                 <p>
-                  Każdy z tych etapów wnosi coś, co dziś mogę wykorzystać w pracy dla JOSKIN: precyzję, komunikację, dokumentację, multimedia albo doświadczenie pracy wielojęzycznej.
+                  Każdy z tych etapów wnosi coś konkretnego do mojego obecnego profilu: precyzję, swobodę pracy z dokumentacją, doświadczenie multimedialne albo praktykę działania w środowisku wielojęzycznym.
                 </p>
               </div>
             </motion.div>
@@ -166,7 +166,7 @@ export default function Experience() {
                       </motion.ul>
 
                       <div className="border-t border-rule/80 pt-4">
-                        <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-2">Znaczenie dla JOSKIN</p>
+                        <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-2">Dlaczego to ważne dziś</p>
                         <p className="text-sm text-ink-mid leading-relaxed">{exp.relevance}</p>
                       </div>
                     </motion.div>

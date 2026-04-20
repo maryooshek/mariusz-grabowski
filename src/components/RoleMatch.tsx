@@ -43,7 +43,7 @@ export default function RoleMatch() {
           label="Dopasowanie do stanowisk"
           number="02"
           title="Dlaczego pasuję do trzech ról?"
-          subtitle="Moje doświadczenie nie jest przypadkowe — to spójna ścieżka łącząca komunikację, media, technologię i języki. Każda z trzech ról wpisuje się w inny wymiar tego profilu."
+          subtitle="Mój profil łączy komunikację, multimedia, dokumentację i pracę cyfrową. Dlatego każda z tych ról odpowiada innemu, ale spójnemu obszarowi mojego doświadczenia."
         />
 
         {/* Role selector — editorial number tabs */}

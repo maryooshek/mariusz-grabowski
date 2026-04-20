@@ -176,7 +176,7 @@ export const experienceData = [
       'Animacje i dokumentacja techniczna dla ABB — szkolenia BHP dla branży przemysłowej',
       'Lokalizacja modułów e-learningowych dla Toyota, Scania, John Deere i BRP',
       'Scenariuszowe kursy gamifikowane dla Cabinet Office i Network Rail (UK)',
-      'Pełne cykle lokalizacyjne dla wielu rynków i wersji językowych — After Effects, Premiere, InDesign',
+      'Pełne cykle lokalizacyjne dla wielu rynków — od adaptacji treści po finalny montaż w After Effects, Premiere i InDesign',
     ],
     relevance: 'Mocne doświadczenie w sektorze przemysłowym i technicznym, bardzo przydatne dla komunikacji produktowej, filmów instruktażowych i materiałów pokazujących maszyny w praktyce.',
     accentColor: 'green' as const,
@@ -455,7 +455,7 @@ export const joskinPointsData = [
   {
     icon: 'Layers',
     title: 'Wszechstronność jako atut, nie kompromis',
-    text: 'JOSKIN szuka pracowników elastycznych, gotowych działać tam, gdzie są potrzebni. Mój profil — łączący komunikację, media, dokumentację i technologię — pozwala mi realnie wspierać wiele działów jednocześnie.',
+    text: 'Mój profil łączy komunikację, media, dokumentację i technologię, dlatego najlepiej sprawdzam się tam, gdzie potrzebna jest współpraca między działami i elastyczne podejście do zadań.',
     color: 'green' as const,
   },
   {
