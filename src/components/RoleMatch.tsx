@@ -72,12 +72,12 @@ export default function RoleMatch() {
                   : 'border-rule/80 bg-paper text-ink-light hover:text-ink-mid hover:border-rule hover:bg-surface'
               }`}
             >
-              <span className="flex items-start gap-2 sm:gap-3">
+              <span className="flex flex-col items-start gap-1 sm:flex-row sm:items-start sm:gap-3">
                 <span className={`font-cormorant font-semibold text-lg sm:text-xl leading-none ${active === i ? 'text-field' : 'text-ink-ghost'}`}>
                   {r.number}
                 </span>
                 <span className="min-w-0">
-                  <span className={`block font-medium text-[13px] sm:text-sm leading-snug ${active === i ? 'text-ink' : 'text-ink-mid'}`}>
+                  <span className={`block font-medium text-[13px] sm:text-sm leading-snug break-words ${active === i ? 'text-ink' : 'text-ink-mid'}`}>
                     {r.shortTitle}
                   </span>
                   <span className="hidden sm:block mt-1 font-mono text-2xs uppercase tracking-widest text-ink-light">
