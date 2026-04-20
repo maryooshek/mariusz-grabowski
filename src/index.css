@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-padding-top: 7rem;
+  }
+
+  body {
+    background-color: #f2ece0;
+    color: #1a1510;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(59, 88, 52, 0.18);
+    color: #1a1510;
+  }
+
+  :focus-visible {
+    outline: 2px solid #3b5834;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+  }
+
+  section[id] {
+    scroll-margin-top: 7rem;
+  }
+}
+
+@layer components {
+
+  /* Section label */
+  .section-label {
+    @apply inline-flex items-center gap-3 font-mono text-2xs tracking-widest2 uppercase text-ink-light mb-5;
+  }
+  .section-label::before {
+    content: '';
+    @apply block w-8 h-px bg-rule flex-shrink-0;
+  }
+
+  /* Thin horizontal rule — the site's signature motif */
+  .site-rule {
+    @apply w-full h-px bg-rule;
+  }
+
+  /* Buttons — no rounded corners, intentionally */
+  .btn-primary {
+    @apply inline-flex items-center gap-2.5 px-7 py-3.5 bg-field text-paper text-sm font-medium tracking-wide transition-all duration-200;
+  }
+  .btn-primary:hover {
+    @apply bg-field-light;
+    transform: translateY(-1px);
+  }
+  .btn-primary:focus-visible {
+    @apply outline-none ring-2 ring-field ring-offset-2 ring-offset-paper;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2.5 px-7 py-3.5 border border-rule text-ink-mid text-sm font-medium tracking-wide transition-all duration-200;
+  }
+  .btn-ghost:hover {
+    @apply border-ink text-ink;
+    transform: translateY(-1px);
+  }
+
+  .btn-ghost-dark {
+    @apply inline-flex items-center gap-2.5 px-7 py-3.5 border border-dark-border text-dark-text text-sm font-medium tracking-wide transition-all duration-200;
+  }
+  .btn-ghost-dark:hover {
+    @apply border-dark-text;
+    transform: translateY(-1px);
+  }
+
+  /* Card — shadow instead of border */
+  .card {
+    @apply bg-surface rounded-lg transition-all duration-300;
+    box-shadow: 0 1px 3px rgba(26, 21, 16, 0.05), 0 4px 16px rgba(26, 21, 16, 0.06);
+  }
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(26, 21, 16, 0.06), 0 12px 40px rgba(26, 21, 16, 0.1);
+    transform: translateY(-3px);
+  }
+
+  /* Tag / badge */
+  .tag-field {
+    @apply font-mono text-2xs px-2.5 py-1 tracking-wide uppercase text-field bg-field-pale;
+  }
+  .tag-gold {
+    @apply font-mono text-2xs px-2.5 py-1 tracking-wide uppercase bg-gold-pale;
+    color: #b08030;
+  }
+  .tag-neutral {
+    @apply font-mono text-2xs px-2.5 py-1 tracking-wide uppercase text-ink-mid bg-paper-warm;
+  }
+
+  .surface-panel {
+    @apply bg-surface;
+    box-shadow: 0 1px 3px rgba(26, 21, 16, 0.05), 0 10px 30px rgba(26, 21, 16, 0.05);
+  }
+
+  /* Dark section overrides */
+  .dark-section {
+    background-color: #171210;
+    color: #efe8d8;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* Custom scrollbar — refined */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: #f2ece0; }
+  ::-webkit-scrollbar-thumb { background: #c4b8a8; }
+  ::-webkit-scrollbar-thumb:hover { background: #9c8f83; }
+}
