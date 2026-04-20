@@ -16,7 +16,7 @@ export default function Navigation() {
   }, [])
 
   useEffect(() => {
-    const media = window.matchMedia('(max-width: 1179px)')
+    const media = window.matchMedia('(max-width: 1320px)')
     const applyMatch = (event?: MediaQueryList | MediaQueryListEvent) => {
       setIsCompactNav(event ? event.matches : media.matches)
     }
@@ -47,7 +47,7 @@ export default function Navigation() {
     }
 
     const onResize = () => {
-      if (window.innerWidth >= 1180) {
+      if (window.innerWidth >= 1321) {
         setMobileOpen(false)
       }
     }
@@ -93,10 +93,11 @@ export default function Navigation() {
         initial={{ y: -70, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        style={!isCompactNav ? { x: '-50%' } : undefined}
         className={`fixed top-4 z-50 transition-all duration-400 ${
           isCompactNav
             ? 'left-3 right-3'
-            : 'left-1/2 w-[1180px] max-w-[calc(100%-1.5rem)] -translate-x-1/2'
+            : 'left-1/2 w-[1180px] max-w-[calc(100%-1.5rem)]'
         } ${
           scrolled || mobileOpen
             ? 'bg-paper/92 backdrop-blur-md shadow-[0_2px_20px_rgba(26,21,16,0.1)] border border-rule'
@@ -105,7 +106,7 @@ export default function Navigation() {
         role="banner"
       >
         <nav
-          className={`px-3 sm:px-4 py-2 ${isCompactNav ? 'flex items-center justify-between gap-3' : 'grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3'}`}
+          className={`px-3 sm:px-4 py-2 ${isCompactNav ? 'flex items-center justify-between gap-3' : 'relative flex items-center justify-between gap-4'}`}
           aria-label="Nawigacja główna"
         >
           {/* Logo */}
@@ -113,7 +114,7 @@ export default function Navigation() {
             onClick={() => handleNav('#home')}
             aria-label="Mariusz Grabowski — Strona główna"
             className={`flex shrink-0 items-center gap-2.5 group ${
-              isCompactNav ? 'pr-3 mr-1 border-r border-rule' : 'justify-self-start pr-3 mr-1 border-r border-rule'
+              isCompactNav ? 'pr-3 mr-1 border-r border-rule' : 'relative z-10 pr-3 mr-1 border-r border-rule'
             }`}
           >
             <span className="font-cormorant font-semibold text-base text-ink group-hover:text-field transition-colors">
@@ -123,36 +124,38 @@ export default function Navigation() {
 
           {/* Desktop links */}
           {!isCompactNav && (
-          <ul className="flex items-center justify-center min-w-0 justify-self-center" role="list">
-            {navItems.map((item) => {
-              const isActive = activeSection === item.href.slice(1)
-              return (
-                <li key={item.href}>
-                  <button
-                    onClick={() => handleNav(item.href)}
-                    aria-current={isActive ? 'page' : undefined}
-                    className={`relative px-2.5 xl:px-3 py-1.5 font-sans text-[11px] xl:text-xs tracking-[0.12em] transition-all duration-200 whitespace-nowrap ${
-                      isActive ? 'text-field font-medium' : 'text-ink-mid hover:text-ink'
-                    }`}
-                  >
-                    {item.label}
-                    {isActive && (
-                      <motion.span
-                        layoutId="nav-pill"
-                        className="absolute inset-0 bg-field-pale rounded-full -z-10"
-                        transition={{ type: 'spring', bounce: 0.2, duration: 0.5 }}
-                      />
-                    )}
-                  </button>
-                </li>
-              )
-            })}
-          </ul>
+          <div className="pointer-events-none absolute inset-y-0 left-1/2 flex -translate-x-1/2 items-center justify-center px-[7.5rem] xl:px-[8.75rem]">
+            <ul className="pointer-events-auto flex max-w-full items-center justify-center" role="list">
+              {navItems.map((item) => {
+                const isActive = activeSection === item.href.slice(1)
+                return (
+                  <li key={item.href}>
+                    <button
+                      onClick={() => handleNav(item.href)}
+                      aria-current={isActive ? 'page' : undefined}
+                      className={`relative px-2 xl:px-2.5 py-1.5 font-sans text-[10px] xl:text-[11px] tracking-[0.11em] transition-all duration-200 whitespace-nowrap ${
+                        isActive ? 'text-field font-medium' : 'text-ink-mid hover:text-ink'
+                      }`}
+                    >
+                      {item.label}
+                      {isActive && (
+                        <motion.span
+                          layoutId="nav-pill"
+                          className="absolute inset-0 bg-field-pale rounded-full -z-10"
+                          transition={{ type: 'spring', bounce: 0.2, duration: 0.5 }}
+                        />
+                      )}
+                    </button>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
           )}
 
           {/* CTA */}
           {!isCompactNav && (
-          <div className="shrink-0 justify-self-end pl-1 ml-1 border-l border-rule">
+          <div className="relative z-10 shrink-0 pl-1 ml-1 border-l border-rule">
             <button
               onClick={() => handleNav('#kontakt')}
               className="px-4 py-1.5 bg-field text-paper text-xs font-medium rounded-full tracking-wide hover:bg-field-light transition-colors duration-200"

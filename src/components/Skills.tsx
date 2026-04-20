@@ -47,8 +47,8 @@ export default function Skills() {
             <SectionHeader
               label="Narzędzia i technologie"
               number="06"
-              title="Warsztat zbudowany przez dekady"
-              subtitle="Uporządkowany według realnych obszarów pracy: od multimediów i dokumentacji po web, lokalizację i koordynację projektów."
+              title="Warsztat pokazany przez pryzmat użyteczności"
+              subtitle="Najpierw obszary, które najmocniej odpowiadają na potrzeby tej rekrutacji. Niżej kompetencje, które poszerzają zakres działania i wzmacniają wszechstronność profilu."
             />
 
             <motion.div
@@ -57,17 +57,17 @@ export default function Skills() {
               transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
             >
               <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">
-                Układ kompetencji
+                Jak czytać tę sekcję
               </p>
               <div className="space-y-4 text-sm text-ink-mid leading-relaxed">
                 <p>
-                  Każda grupa odpowiada konkretnemu obszarowi pracy: od produkcji materiałów, przez dokumentację, po publikację i lokalizację.
+                  To nie jest lista wszystkich programów, z którymi miałem kontakt. To uporządkowany warsztat pokazany przez pryzmat tego, gdzie mogę być najbardziej użyteczny od początku współpracy.
                 </p>
                 <p>
-                  Najpierw pokazuję obszary kluczowe dla mojego obecnego profilu, a niżej kompetencje uzupełniające, które poszerzają zakres działania.
+                  Na górze znajdują się kompetencje najmocniej wspierające materiały produktowe, pracę wielojęzyczną i uporządkowaną dokumentację. Niżej pokazuję obszary, które poszerzają zakres działania o publikację cyfrową, szkolenia i koordynację.
                 </p>
                 <p>
-                  W części webowej pokazuję również technologie, z którymi pracuję obecnie. Ta strona jest praktycznym przykładem mojego podejścia do struktury, estetyki i wdrożenia front-endowego.
+                  Część webowa obejmuje także technologie, z którymi pracuję obecnie. Ta strona pozostaje praktycznym przykładem mojego podejścia do struktury, estetyki i wdrożenia front-endowego.
                 </p>
               </div>
             </motion.div>
@@ -76,7 +76,7 @@ export default function Skills() {
           <div className="relative z-10">
             <div className="mb-8">
               <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">
-                Obszary kluczowe
+                Najbardziej użyteczne w tej rekrutacji
               </p>
               <div className="grid gap-4">
                 {coreGroups.map((group, i) => (
@@ -97,9 +97,6 @@ export default function Skills() {
                           {group.description}
                         </p>
                       </div>
-                      <span className={`inline-flex items-center px-3 py-1 border text-[11px] uppercase tracking-[0.18em] ${group.color === 'green' ? 'border-field/20 text-field bg-paper/70' : 'border-gold/25 text-gold bg-paper/70'}`}>
-                        Priorytet
-                      </span>
                     </motion.div>
                     <div className="flex flex-wrap gap-2">
                       {group.skills.map(skill => (
@@ -113,7 +110,7 @@ export default function Skills() {
 
             <div>
               <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">
-                Kompetencje uzupełniające
+                Zaplecze poszerzające zakres działania
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {supportingGroups.map((group, i) => (

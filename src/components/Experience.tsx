@@ -63,7 +63,7 @@ export default function Experience() {
                 {[
                   ['20+', 'lat doświadczenia'],
                   ['4', 'języki robocze'],
-                  ['10+', 'lat pracy po angielsku'],
+                  ['od 2004', 'angielski w codziennej pracy'],
                 ].map(([value, label]) => (
                   <div key={label}>
                     <span

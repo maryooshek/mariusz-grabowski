@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import { SectionHeader } from './SectionWrapper'
 
 const milestones = [
-  { year: '1991–1996', title: 'Fundament', text: 'Antropologia społeczna na Uniwersytecie Karola w Pradze — nauka myślenia o komunikacji między kulturami. College of Art and Design w Bydgoszczy — narzędzia do nadawania tej komunikacji formy wizualnej.' },
+  { year: '1989–1996', title: 'Fundament', text: 'Technikum Rolnicze w Grudziądzu — pierwszy kontakt z uporządkowanym myśleniem o pracy, produkcie i środowisku rolniczym. Antropologia społeczna na Uniwersytecie Karola w Pradze — nauka myślenia o komunikacji między kulturami. College of Art and Design w Bydgoszczy — narzędzia do nadawania tej komunikacji formy wizualnej.' },
   { year: '1996–2010', title: 'Budowanie warsztatu', text: 'Od grafiki wydawniczej i targów branżowych w Polsce, przez techniczne instrukcje w Warszawie, do wielojęzycznych podręczników dla Xerox UK. Każda rola dokładała nową warstwę.' },
   { year: '2010–2011', title: 'Reset i perspektywa', text: 'Rok podróży z rodziną przez Bliski Wschód, Indie i Azję Południowo-Wschodnią. Negocjacje bez wspólnego języka, budżetowanie w kilkunastu walutach, improwizacja — doświadczenia nie do przecenienia.' },
   { year: '2011–2016', title: 'Specjalizacja', text: 'Oxford Conversis — lokalizacja dokumentacji klinicznej w projektach obejmujących nawet 70 języków równocześnie. Cardno Emerging Markets — materiały szkoleniowe dla projektów pomocowych. Precyzja, jakość i odpowiedzialność za termin.' },
@@ -53,6 +53,11 @@ export default function About() {
             <div className="mt-10">
               <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">Wykształcenie</p>
               <div className="space-y-3">
+                <div className="flex flex-col">
+                  <span className="text-sm font-medium text-ink">Technikum Rolnicze, Grudziądz</span>
+                  <span className="font-mono text-2xs text-ink-light mt-0.5">1989–1994</span>
+                </div>
+                <div className="w-full h-px bg-rule my-1" />
                 <div className="flex flex-col">
                   <span className="text-sm font-medium text-ink">College of Art and Design, Bydgoszcz</span>
                   <span className="font-mono text-2xs text-ink-light mt-0.5">Desktop Publishing & Graphic Design · 1995–1996</span>

@@ -36,12 +36,12 @@ export default function Languages() {
               label="Języki"
               number="07"
               title="Wielojęzyczność jako rdzeń profilu"
-              subtitle="Języki jako realne narzędzie pracy: ponad dekada w środowiskach anglosaskich, projekty lokalizowane na dziesiątki rynków i studia w Pradze."
+            subtitle="Języki jako realne narzędzie pracy: angielski jest moim codziennym językiem pracy od 2004 roku, a ten profil wzmacniają projekty dla wielu rynków i studia w Pradze."
             />
 
             <div className="space-y-4 text-sm text-ink-mid leading-relaxed mb-10">
               <p>
-                Wielojęzyczność to fundament mojej kariery. Angielski był moim codziennym językiem pracy przez ponad 10 lat w Xerox UK, Oxford Conversis i Cardno. Czeski zdobyłem na Uniwersytecie Karola w Pradze.
+                Wielojęzyczność to fundament mojej kariery. Angielski jest moim codziennym językiem pracy od 2004 roku, między innymi w Xerox UK, Oxford Conversis i Cardno. Czeski rozwijałem podczas studiów na Uniwersytecie Karola w Pradze.
               </p>
               <p>
                 W kontekście JOSKIN szczególnie istotny jest dla mnie mocny angielski, a czeski i rosyjski stanowią dodatkowe wsparcie komunikacyjne. Niemiecki pozostaje na poziomie podstawowym, więc traktuję go jako obszar do dalszego rozwoju.
@@ -63,9 +63,9 @@ export default function Languages() {
                   className="block font-cormorant font-semibold text-gold leading-none mb-1"
                   style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}
                 >
-                  10+
+                  od 2004
                 </span>
-                <span className="font-mono text-2xs uppercase tracking-widest text-ink-light">Lat pracy po angielsku</span>
+                <span className="font-mono text-2xs uppercase tracking-widest text-ink-light">Angielski w codziennej pracy</span>
               </div>
             </div>
           </motion.div>
