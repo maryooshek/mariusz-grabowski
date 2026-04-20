@@ -117,6 +117,50 @@
     box-shadow: 0 1px 3px rgba(26, 21, 16, 0.05), 0 10px 30px rgba(26, 21, 16, 0.05);
   }
 
+  .section-seam::before {
+    content: '';
+    position: absolute;
+    inset-inline: 8%;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(59, 88, 52, 0.18), transparent);
+    pointer-events: none;
+  }
+
+  .section-seam::after {
+    content: '';
+    position: absolute;
+    inset-inline: 6%;
+    bottom: 0;
+    height: 120px;
+    background: linear-gradient(180deg, rgba(242, 236, 224, 0), rgba(255, 255, 255, 0.22) 42%, rgba(242, 236, 224, 0));
+    opacity: 0.5;
+    filter: blur(18px);
+    pointer-events: none;
+  }
+
+  .section-seam-dark::before {
+    content: '';
+    position: absolute;
+    inset-inline: 8%;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(192, 214, 186, 0.24), transparent);
+    pointer-events: none;
+  }
+
+  .section-seam-dark::after {
+    content: '';
+    position: absolute;
+    inset-inline: 7%;
+    bottom: 0;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(23, 18, 16, 0), rgba(59, 88, 52, 0.16) 46%, rgba(23, 18, 16, 0));
+    opacity: 0.55;
+    filter: blur(20px);
+    pointer-events: none;
+  }
+
   /* Dark section overrides */
   .dark-section {
     background-color: #171210;

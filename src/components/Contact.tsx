@@ -7,7 +7,7 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="kontakt" ref={ref} className="relative py-24 md:py-32 bg-paper" aria-label="Kontakt">
+    <section id="kontakt" ref={ref} className="relative py-24 md:py-32 bg-paper section-seam overflow-hidden" aria-label="Kontakt">
       <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px bg-rule" />
 
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
@@ -40,14 +40,18 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.75, delay: 0.1 }}
           >
-            <div className="surface-panel p-8 border-l-4 border-l-field mb-8">
+            <motion.div
+              className="surface-panel p-8 border-l-4 border-l-field mb-8"
+              whileHover={{ y: -5, scale: 1.01 }}
+              transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            >
               <p className="text-ink-mid leading-relaxed mb-4">
                 Jestem otwarty na rozmowę o tym, w którym obszarze mógłbym wnieść największą wartość do JOSKIN Polska. Najnaturalniej odnajduję się na styku komunikacji, multimediów, dokumentacji i pracy wielojęzycznej.
               </p>
               <p className="text-ink-mid leading-relaxed">
                 Chętnie opowiem szerzej o swoim doświadczeniu, sposobie pracy i o tym, jak mój profil może przełożyć się na praktyczne wsparcie firmy w jednej lub kilku z tych ról.
               </p>
-            </div>
+            </motion.div>
 
             {/* Contact details */}
             <div className="space-y-0 divide-y divide-rule">
@@ -67,9 +71,18 @@ export default function Contact() {
                   </div>
                 )
                 return href ? (
-                  <a key={label} href={href} className="block" aria-label={`${label}: ${value}`}>{inner}</a>
+                  <motion.a
+                    key={label}
+                    href={href}
+                    className="block"
+                    aria-label={`${label}: ${value}`}
+                    whileHover={{ x: 4 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {inner}
+                  </motion.a>
                 ) : (
-                  <div key={label}>{inner}</div>
+                  <motion.div key={label} whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>{inner}</motion.div>
                 )
               })}
             </div>
@@ -83,7 +96,11 @@ export default function Contact() {
             className="flex flex-col justify-between gap-10"
           >
             {/* Target company */}
-            <div className="surface-panel p-8 border-t-2 border-field">
+            <motion.div
+              className="surface-panel p-8 border-t-2 border-field"
+              whileHover={{ y: -5, scale: 1.01 }}
+              transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            >
               <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">Ta prezentacja została przygotowana dla:</p>
               <p className="font-cormorant font-semibold text-ink text-xl mb-1">JOSKIN Polska Sp. z o.o.</p>
               <p className="text-sm text-ink-mid mb-1">ul. Gorzowska 62, 64-980 Trzcianka</p>
@@ -95,10 +112,14 @@ export default function Contact() {
                 kadry@joskin.com
                 <ExternalLink size={12} strokeWidth={1.5} />
               </a>
-            </div>
+            </motion.div>
 
             {/* 3 roles reminder */}
-            <div className="surface-panel p-8 border border-rule/70">
+            <motion.div
+              className="surface-panel p-8 border border-rule/70"
+              whileHover={{ y: -5, scale: 1.01 }}
+              transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            >
               <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">Rozważane stanowiska</p>
               <div className="space-y-3">
                 {[
@@ -115,7 +136,7 @@ export default function Contact() {
               <p className="text-sm text-ink-mid leading-relaxed mt-6 pt-5 border-t border-rule/80">
                 Najmocniej widzę swoją wartość tam, gdzie łączą się treści produktowe, komunikacja techniczna, multimedia i współpraca z różnymi działami.
               </p>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
 

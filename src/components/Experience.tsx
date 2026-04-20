@@ -25,7 +25,7 @@ export default function Experience() {
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="doswiadczenie" ref={ref} className="relative py-24 md:py-32 bg-paper">
+    <section id="doswiadczenie" ref={ref} className="relative py-24 md:py-32 bg-paper section-seam overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,11 @@ export default function Experience() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:sticky lg:top-28"
           >
-            <div className="surface-panel p-8 border-l-4 border-l-field">
+            <motion.div
+              className="surface-panel p-8 border-l-4 border-l-field"
+              whileHover={{ y: -5, scale: 1.01 }}
+              transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            >
               <p
                 className="font-cormorant italic text-ink/75 leading-tight"
                 style={{ fontSize: 'clamp(22px, 3vw, 34px)' }}
@@ -83,7 +87,7 @@ export default function Experience() {
                   Dzięki temu rekruter widzi nie tylko gdzie pracowałem, ale przede wszystkim dlaczego te doświadczenia są dziś istotne dla JOSKIN.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Timeline */}
@@ -136,7 +140,11 @@ export default function Experience() {
                       className={`md:hidden absolute left-[7px] top-[8px] w-3 h-3 rounded-full border-2 ${ac.dot}`}
                     />
 
-                    <div className={`surface-panel border border-rule/70 border-l-4 ${ac.panelBorder} px-6 py-6 md:px-7 md:py-7 transition-all duration-250 hover:-translate-y-0.5 ${ac.panelGlow}`}>
+                    <motion.div
+                      className={`surface-panel border border-rule/70 border-l-4 ${ac.panelBorder} px-6 py-6 md:px-7 md:py-7 transition-all duration-250 hover:-translate-y-0.5 ${ac.panelGlow}`}
+                      whileHover={{ y: -6, scale: 1.01 }}
+                      transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+                    >
                       <div className="mb-5">
                         <h3 className="font-cormorant font-semibold text-ink leading-tight" style={{ fontSize: 'clamp(18px, 2vw, 24px)' }}>
                           {exp.role}
@@ -148,20 +156,20 @@ export default function Experience() {
                         </div>
                       </div>
 
-                      <ul className="space-y-2.5 mb-6">
+                      <motion.ul className="space-y-2.5 mb-6" whileHover={{ x: 4 }} transition={{ duration: 0.22 }}>
                         {exp.highlights.map((h, j) => (
                           <li key={j} className="flex gap-3 text-sm text-ink-mid leading-relaxed">
                             <span className={`shrink-0 mt-2 w-1.5 h-1.5 rounded-full ${exp.accentColor === 'green' ? 'bg-field/80' : 'bg-gold/80'}`} />
                             <span>{h}</span>
                           </li>
                         ))}
-                      </ul>
+                      </motion.ul>
 
                       <div className="border-t border-rule/80 pt-4">
                         <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-2">Znaczenie dla JOSKIN</p>
                         <p className="text-sm text-ink-mid leading-relaxed">{exp.relevance}</p>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                 </motion.div>
               )
@@ -183,7 +191,11 @@ export default function Experience() {
                 className="md:hidden absolute left-[7px] top-[8px] w-3 h-3 rounded-full border-2 border-paper bg-rule"
               />
 
-              <div className="surface-panel border border-dashed border-rule px-6 py-5 md:px-7">
+              <motion.div
+                className="surface-panel border border-dashed border-rule px-6 py-5 md:px-7"
+                whileHover={{ y: -5, scale: 1.01 }}
+                transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+              >
                 <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-3">
                   Wcześniejsze etapy
                 </p>
@@ -191,7 +203,7 @@ export default function Experience() {
                   <span className="font-medium text-ink">1996–2000</span>
                   {' '}— Wydawnictwo „Omega” oraz SDL Poland / Lomac. To wtedy zbudowałem fundament warsztatu DTP, składu wielojęzycznego i pracy z dokumentacją techniczną, który później rozwijałem w środowiskach międzynarodowych.
                 </p>
-              </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>

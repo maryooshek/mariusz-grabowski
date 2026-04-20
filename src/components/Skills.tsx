@@ -27,7 +27,7 @@ export default function Skills() {
   const supportingGroups = skillGroupsData.filter(group => group.tier === 'supporting')
 
   return (
-    <section id="umiejetnosci" ref={ref} className="relative py-24 md:py-32 bg-paper-warm overflow-hidden">
+    <section id="umiejetnosci" ref={ref} className="relative py-24 md:py-32 bg-paper-warm overflow-hidden section-seam">
       <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px bg-rule" />
       <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px bg-rule" />
       <div
@@ -51,7 +51,11 @@ export default function Skills() {
               subtitle="Pogrupowany, nie wysypany — bo liczy się hierarchia i kontekst, nie ilość znaczków."
             />
 
-            <div className="surface-panel p-7 border border-rule/70">
+            <motion.div
+              className="surface-panel p-7 border border-rule/70"
+              whileHover={{ y: -5, scale: 1.01 }}
+              transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            >
               <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-4">
                 Jak czytać ten zestaw
               </p>
@@ -66,7 +70,7 @@ export default function Skills() {
                   W części webowej celowo pokazuję także technologie, z którymi pracuję obecnie. Sama ta strona została przygotowana jako praktyczna próbka sposobu myślenia o strukturze, estetyce i wdrożeniu front-endowym.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
 
           <div className="relative z-10">
@@ -81,9 +85,10 @@ export default function Skills() {
                     initial={{ opacity: 0, y: 16 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.06 + i * 0.08 }}
+                    whileHover={{ y: -6, scale: 1.01 }}
                     className={`surface-panel border p-7 md:p-8 hover:-translate-y-1 transition-all duration-200 ${frameClass[group.color]}`}
                   >
-                    <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
+                    <motion.div className="flex flex-wrap items-start justify-between gap-4 mb-5" whileHover={{ x: 4 }} transition={{ duration: 0.22 }}>
                       <div>
                         <h3 className={`font-mono text-2xs uppercase tracking-widest ${labelClass[group.color]}`}>
                           {group.category}
@@ -95,7 +100,7 @@ export default function Skills() {
                       <span className={`inline-flex items-center px-3 py-1 border text-[11px] uppercase tracking-[0.18em] ${group.color === 'green' ? 'border-field/20 text-field bg-paper/70' : 'border-gold/25 text-gold bg-paper/70'}`}>
                         Priorytet
                       </span>
-                    </div>
+                    </motion.div>
                     <div className="flex flex-wrap gap-2">
                       {group.skills.map(skill => (
                         <span key={skill} className={tagClass[group.color]}>{skill}</span>
@@ -117,14 +122,15 @@ export default function Skills() {
                     initial={{ opacity: 0, y: 16 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.26 + i * 0.07 }}
+                    whileHover={{ y: -6, scale: 1.01 }}
                     className="surface-panel border border-rule/70 p-7 hover:-translate-y-1 transition-all duration-200"
                   >
-                    <div className="flex items-center justify-between gap-3 mb-4">
+                    <motion.div className="flex items-center justify-between gap-3 mb-4" whileHover={{ x: 4 }} transition={{ duration: 0.22 }}>
                       <h3 className={`font-mono text-2xs uppercase tracking-widest ${labelClass[group.color]}`}>
                         {group.category}
                       </h3>
                       <span className={`inline-block w-10 h-px ${group.color === 'green' ? 'bg-field/60' : 'bg-gold/60'}`} />
-                    </div>
+                    </motion.div>
                     <p className="text-sm text-ink-mid leading-relaxed mb-4">
                       {group.description}
                     </p>
@@ -152,7 +158,14 @@ export default function Skills() {
           </p>
           <div className="flex flex-wrap justify-center gap-2 max-w-5xl mx-auto">
             {['Roche', 'GSK', 'Janssen', 'AstraZeneca', 'Merck', 'ABB', 'Toyota', 'Scania', 'John Deere', 'BRP', 'Cabinet Office UK', 'Network Rail', 'Xerox', 'Rubix'].map(c => (
-              <span key={c} className="tag-neutral">{c}</span>
+              <motion.span
+                key={c}
+                className="tag-neutral"
+                whileHover={{ y: -2, scale: 1.03 }}
+                transition={{ duration: 0.2 }}
+              >
+                {c}
+              </motion.span>
             ))}
           </div>
         </motion.div>

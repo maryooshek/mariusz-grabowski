@@ -20,7 +20,7 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="projekty" ref={ref} className="relative py-24 md:py-32 bg-paper-warm">
+    <section id="projekty" ref={ref} className="relative py-24 md:py-32 bg-paper-warm section-seam overflow-hidden">
       <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px bg-rule" />
       <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px bg-rule" />
 
@@ -45,6 +45,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.05 + i * 0.06 }}
+              whileHover={{ y: -6, scale: 1.012 }}
               className="group relative bg-paper-warm p-6 hover:bg-surface transition-colors duration-200 overflow-hidden flex flex-col gap-4"
             >
               {/* Ghost number */}
@@ -56,15 +57,24 @@ export default function Projects() {
                 {String(i + 1).padStart(2, '0')}
               </span>
 
-              <div className="relative flex flex-col gap-3 flex-1">
+              <motion.div className="relative flex flex-col gap-3 flex-1" whileHover={{ x: 4 }} transition={{ duration: 0.22 }}>
                 <h3 className="font-cormorant font-semibold text-ink text-base leading-snug">
                   {p.title}
                 </h3>
                 <p className="text-xs text-ink-mid leading-relaxed flex-1">{p.description}</p>
                 <div className="flex flex-wrap gap-1.5">
-                  {p.tags.map(t => <span key={t} className={tagC[p.color]}>{t}</span>)}
+                  {p.tags.map(t => (
+                    <motion.span
+                      key={t}
+                      className={tagC[p.color]}
+                      whileHover={{ y: -2, scale: 1.03 }}
+                      transition={{ duration: 0.18 }}
+                    >
+                      {t}
+                    </motion.span>
+                  ))}
                 </div>
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>

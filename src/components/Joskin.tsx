@@ -10,7 +10,7 @@ export default function Joskin() {
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="joskin" ref={ref} className="relative py-24 md:py-32 dark-section overflow-hidden">
+    <section id="joskin" ref={ref} className="relative py-24 md:py-32 dark-section overflow-hidden section-seam-dark">
       {/* Subtle texture on dark bg */}
       <div
         aria-hidden="true"
@@ -66,9 +66,10 @@ export default function Joskin() {
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + i * 0.1 }}
+              whileHover={{ y: -6, scale: 1.01 }}
               className="bg-dark p-8 group hover:bg-dark-surface transition-colors duration-200"
             >
-              <div className="flex items-start gap-4">
+              <motion.div className="flex items-start gap-4" whileHover={{ x: 5 }} transition={{ duration: 0.22 }}>
                 <div>
                   <span
                     className="block font-cormorant font-semibold text-dark-text/30 leading-none mb-3 select-none"
@@ -79,7 +80,7 @@ export default function Joskin() {
                   <h3 className="font-cormorant font-semibold text-dark-text text-lg mb-3">{point.title}</h3>
                   <p className="text-sm text-dark-mid leading-relaxed">{point.text}</p>
                 </div>
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>
@@ -109,10 +110,10 @@ export default function Joskin() {
               { val: 'Pasja', sub: 'Wieloletnie zaangażowanie' },
               { val: 'Ewolucja', sub: 'Gotowość do nauki' },
             ].map(v => (
-              <div key={v.val}>
+              <motion.div key={v.val} whileHover={{ y: -2 }} transition={{ duration: 0.2 }}>
                 <span className="block font-mono text-2xs uppercase tracking-widest text-field-light">{v.val}</span>
                 <span className="block font-mono text-2xs text-dark-muted mt-0.5">{v.sub}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
 

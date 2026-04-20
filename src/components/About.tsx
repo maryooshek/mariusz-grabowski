@@ -15,7 +15,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="o-mnie" ref={ref} className="relative py-24 md:py-32 bg-paper">
+    <section id="o-mnie" ref={ref} className="relative py-24 md:py-32 bg-paper section-seam overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
         <div className="grid lg:grid-cols-[1fr_1px_1fr] gap-0 lg:gap-12">
 

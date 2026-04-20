@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { roleMatchData } from '../data'
-import { SectionHeader } from './SectionWrapper'
+import { SectionHeader, revealUp, stagger } from './SectionWrapper'
 
 type AccentColor = 'green' | 'amber'
 
@@ -28,7 +28,7 @@ export default function RoleMatch() {
   const accent = accentMap[role.accentColor]
 
   return (
-    <section id="dopasowanie" ref={ref} className="relative py-24 md:py-32 bg-paper-warm">
+    <section id="dopasowanie" ref={ref} className="relative py-24 md:py-32 bg-paper-warm section-seam overflow-hidden">
       {/* top/bottom rules */}
       <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px bg-rule" />
       <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px bg-rule" />
@@ -47,15 +47,25 @@ export default function RoleMatch() {
         />
 
         {/* Role selector — editorial number tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 mb-12" role="tablist">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 mb-12"
+          role="tablist"
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+          variants={stagger}
+        >
           {roleMatchData.map((r, i) => (
-            <button
+            <motion.button
               key={r.id}
+              variants={revealUp}
               role="tab"
               id={`role-tab-${r.id}`}
               aria-controls={`role-panel-${r.id}`}
               aria-selected={active === i}
               onClick={() => setActive(i)}
+              whileTap={{ scale: 0.985 }}
+              whileHover={{ y: -4, scale: 1.01 }}
+              transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
               className={`relative min-h-[88px] text-left px-5 py-4 transition-all duration-200 border ${
                 active === i
                   ? 'border-field bg-field-pale text-ink shadow-[0_8px_22px_rgba(59,88,52,0.08)]'
@@ -75,9 +85,9 @@ export default function RoleMatch() {
                   </span>
                 </span>
               </span>
-            </button>
+            </motion.button>
           ))}
-        </div>
+        </motion.div>
 
         {/* Content */}
         <AnimatePresence mode="wait">
@@ -126,7 +136,11 @@ export default function RoleMatch() {
             {/* Two columns */}
             <div className="grid md:grid-cols-2 gap-3 mb-3">
               {/* Direct fit */}
-              <div className="surface-panel p-8">
+              <motion.div
+                className="surface-panel p-8"
+                whileHover={{ y: -5, scale: 1.01 }}
+                transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+              >
                 <h4 className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-5 flex items-center gap-2">
                   <span className={`w-2 h-2 rounded-full ${accent.dot}`} />
                   Bezpośrednie dopasowanie
@@ -139,10 +153,14 @@ export default function RoleMatch() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
 
               {/* Transferable */}
-              <div className="surface-panel p-8">
+              <motion.div
+                className="surface-panel p-8"
+                whileHover={{ y: -5, scale: 1.01 }}
+                transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+              >
                 <h4 className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-5 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-ink-ghost" />
                   Kompetencje transferowalne
@@ -163,7 +181,7 @@ export default function RoleMatch() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             {/* Value footer */}

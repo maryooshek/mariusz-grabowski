@@ -44,23 +44,36 @@ export function SectionHeader({
   number?: string
 }) {
   return (
-    <div className="mb-16 md:mb-20">
-      <span className={`section-label ${dark ? '!text-dark-muted [&::before]:bg-dark-border' : ''}`}>
+    <motion.div
+      className="mb-16 md:mb-20"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: '-60px' }}
+      variants={stagger}
+    >
+      <motion.span
+        variants={revealUp}
+        className={`section-label ${dark ? '!text-dark-muted [&::before]:bg-dark-border' : ''}`}
+      >
         {number && <span className="font-mono text-2xs">{number}</span>}
         {label}
-      </span>
-      <h2
+      </motion.span>
+      <motion.h2
+        variants={revealUp}
         className={`font-cormorant font-semibold leading-tight tracking-tight mb-5 ${dark ? 'text-dark-text' : 'text-ink'}`}
         style={{ fontSize: 'clamp(32px, 4vw, 52px)' }}
       >
         {title}
-      </h2>
+      </motion.h2>
       {subtitle && (
-        <p className={`text-base leading-relaxed max-w-2xl ${dark ? 'text-dark-mid' : 'text-ink-mid'}`}>
+        <motion.p
+          variants={revealUp}
+          className={`text-base leading-relaxed max-w-2xl ${dark ? 'text-dark-mid' : 'text-ink-mid'}`}
+        >
           {subtitle}
-        </p>
+        </motion.p>
       )}
-    </div>
+    </motion.div>
   )
 }
 
@@ -76,4 +89,46 @@ export const revealUp = {
 export const stagger = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.07, delayChildren: 0.05 } },
+}
+
+export const revealLeft = {
+  hidden: { opacity: 0, x: -28 },
+  visible: (delay = 0) => ({
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1], delay },
+  }),
+}
+
+export const revealRight = {
+  hidden: { opacity: 0, x: 28 },
+  visible: (delay = 0) => ({
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1], delay },
+  }),
+}
+
+export const floatCard = {
+  rest: {
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.28, ease: [0.22, 1, 0.36, 1] },
+  },
+  hover: {
+    y: -6,
+    scale: 1.01,
+    transition: { duration: 0.28, ease: [0.22, 1, 0.36, 1] },
+  },
+}
+
+export const hoverNudge = {
+  rest: {
+    x: 0,
+    transition: { duration: 0.24, ease: [0.22, 1, 0.36, 1] },
+  },
+  hover: {
+    x: 4,
+    transition: { duration: 0.24, ease: [0.22, 1, 0.36, 1] },
+  },
 }

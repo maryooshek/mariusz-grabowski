@@ -59,7 +59,7 @@ export default function Strengths() {
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="kompetencje" ref={ref} className="relative py-24 md:py-32 bg-paper">
+    <section id="kompetencje" ref={ref} className="relative py-24 md:py-32 bg-paper section-seam overflow-hidden">
       <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px bg-rule" />
       <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px bg-rule" />
 
@@ -107,7 +107,8 @@ export default function Strengths() {
               key={item.title}
               initial={{ opacity: 0, y: 18 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.05 + i * 0.04 }}
+              transition={{ duration: 0.45, delay: 0.05 + i * 0.04, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -7, scale: 1.012 }}
               className={`group relative overflow-hidden border p-6 md:p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(26,21,16,0.08)] h-full ${accentPanel[item.color]}`}
             >
               <span
@@ -119,12 +120,16 @@ export default function Strengths() {
               </span>
 
               <div className="relative flex items-start gap-4 h-full">
-                <div className={`shrink-0 p-3 border border-current/10 bg-paper/60 ${accentIcon[item.color]}`}>
+                <motion.div
+                  className={`shrink-0 p-3 border border-current/10 bg-paper/60 ${accentIcon[item.color]}`}
+                  whileHover={{ rotate: -4, scale: 1.04 }}
+                  transition={{ duration: 0.24 }}
+                >
                   {(() => {
                     const Icon = iconMap[item.icon as IconName]
                     return <Icon size={18} strokeWidth={1.75} />
                   })()}
-                </div>
+                </motion.div>
                 <div className="min-w-0 flex-1">
                   <h3 className="font-cormorant font-semibold text-ink text-lg leading-snug mb-2">
                   {item.title}

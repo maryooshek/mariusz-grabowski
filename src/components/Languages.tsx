@@ -22,7 +22,7 @@ export default function Languages() {
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="jezyki" ref={ref} className="relative py-24 md:py-32 bg-paper">
+    <section id="jezyki" ref={ref} className="relative py-24 md:py-32 bg-paper section-seam overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 

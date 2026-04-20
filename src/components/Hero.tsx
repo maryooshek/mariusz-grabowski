@@ -1,13 +1,28 @@
-import { motion } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { ArrowDownRight, MapPin } from 'lucide-react'
 
 const go = (href: string) => document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
 
 export default function Hero() {
+  const ref = useRef<HTMLElement | null>(null)
+  const shouldReduceMotion = useReducedMotion()
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start start', 'end start'],
+  })
+  const watermarkY = useTransform(scrollYProgress, [0, 1], [0, shouldReduceMotion ? 0 : 120])
+  const gridY = useTransform(scrollYProgress, [0, 1], [0, shouldReduceMotion ? 0 : 48])
+  const contentY = useTransform(scrollYProgress, [0, 1], [0, shouldReduceMotion ? 0 : -28])
+  const ambientOneY = useTransform(scrollYProgress, [0, 1], [0, shouldReduceMotion ? 0 : -70])
+  const ambientTwoY = useTransform(scrollYProgress, [0, 1], [0, shouldReduceMotion ? 0 : 54])
+  const dividerScale = useTransform(scrollYProgress, [0, 0.35], [1, 1.08])
+
   return (
-    <section
+    <motion.section
+      ref={ref}
       id="home"
-      className="relative min-h-[88vh] lg:min-h-[90vh] flex flex-col justify-center overflow-hidden bg-paper"
+      className="relative min-h-[88vh] lg:min-h-[90vh] flex flex-col justify-center overflow-hidden bg-paper section-seam"
       aria-label="Profil kandydata"
     >
       {/* Thin forest-green accent bar at top */}
@@ -22,26 +37,54 @@ export default function Hero() {
 
       {/* Ghost watermark "MG" — very large, barely visible */}
       <div aria-hidden="true" className="absolute inset-0 overflow-hidden pointer-events-none select-none">
-        <span
+        <motion.div
+          className="absolute -top-16 left-[6%] h-40 w-40 rounded-full bg-field/8 blur-3xl"
+          style={{ y: ambientOneY }}
+          animate={shouldReduceMotion ? undefined : { scale: [1, 1.12, 1], opacity: [0.55, 0.8, 0.55] }}
+          transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.div
+          className="absolute right-[10%] top-[18%] h-56 w-56 rounded-full bg-gold/10 blur-3xl"
+          style={{ y: ambientTwoY }}
+          animate={shouldReduceMotion ? undefined : { scale: [1, 1.08, 1], opacity: [0.35, 0.6, 0.35] }}
+          transition={{ duration: 11, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
+        />
+        <motion.span
           className="absolute -bottom-12 -right-8 font-cormorant font-bold text-ink leading-none"
-          style={{ fontSize: 'clamp(160px, 28vw, 420px)', opacity: 0.028, letterSpacing: '-0.05em' }}
+          style={{ fontSize: 'clamp(160px, 28vw, 420px)', opacity: 0.028, letterSpacing: '-0.05em', y: watermarkY }}
         >
           MG
-        </span>
+        </motion.span>
       </div>
 
       {/* Dot grid texture */}
-      <div
+      <motion.div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none"
         style={{
+          y: gridY,
           backgroundImage: 'radial-gradient(circle, rgba(26,21,16,0.07) 1px, transparent 1px)',
           backgroundSize: '28px 28px',
         }}
       />
 
+      <motion.div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-paper via-paper/88 to-transparent pointer-events-none"
+        style={{ scaleX: dividerScale }}
+      />
+      <motion.div
+        aria-hidden="true"
+        className="absolute left-[8%] right-[8%] bottom-10 h-px bg-gradient-to-r from-transparent via-field/30 to-transparent pointer-events-none"
+        animate={shouldReduceMotion ? undefined : { opacity: [0.45, 0.95, 0.45], scaleX: [0.92, 1, 0.92] }}
+        transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}
+      />
+
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full pt-24 lg:pt-28 pb-14 lg:pb-16">
+      <motion.div
+        className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full pt-24 lg:pt-28 pb-14 lg:pb-16"
+        style={{ y: contentY }}
+      >
 
         {/* Location badge */}
         <motion.div
@@ -134,7 +177,12 @@ export default function Hero() {
                 { n: '4', l: 'języki robocze' },
                 { n: '3', l: 'role' },
               ].map((s, i) => (
-                <div key={s.l} className={i > 0 ? 'pl-7 border-l border-rule' : ''}>
+                <motion.div
+                  key={s.l}
+                  className={i > 0 ? 'pl-7 border-l border-rule' : ''}
+                  whileHover={{ y: -4 }}
+                  transition={{ duration: 0.22 }}
+                >
                   <span
                     className="block font-cormorant font-semibold text-ink leading-none"
                     style={{ fontSize: 'clamp(28px, 3.5vw, 44px)' }}
@@ -144,7 +192,7 @@ export default function Hero() {
                   <span className="block font-mono text-2xs uppercase tracking-widest text-ink-light mt-1.5">
                     {s.l}
                   </span>
-                </div>
+                </motion.div>
               ))}
             </div>
 
@@ -176,7 +224,7 @@ export default function Hero() {
           />
           <span className="font-mono text-2xs uppercase tracking-widest3">Przewiń</span>
         </motion.div>
-      </div>
+      </motion.div>
 
       {/* Role labels — bottom right floating */}
       <motion.div
@@ -198,6 +246,6 @@ export default function Hero() {
           </div>
         ))}
       </motion.div>
-    </section>
+    </motion.section>
   )
 }
