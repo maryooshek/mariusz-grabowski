@@ -140,7 +140,7 @@ export default function RoleMatch() {
               >
                 <h4 className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-5 flex items-center gap-2">
                   <span className={`w-2 h-2 rounded-full ${accent.dot}`} />
-                  Bezpośrednie dopasowanie
+                  Najmocniejsze punkty dla tej roli
                 </h4>
                 <ul className="space-y-3">
                   {role.directFit.map((item, i) => (
@@ -160,7 +160,7 @@ export default function RoleMatch() {
               >
                 <h4 className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-5 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-ink-ghost" />
-                  Kompetencje transferowalne
+                  Dodatkowe atuty, które wzmacniają dopasowanie
                 </h4>
                 <ul className="space-y-3 mb-7">
                   {role.transferable.map((item, i) => (
