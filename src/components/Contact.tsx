@@ -46,7 +46,7 @@ export default function Contact() {
               transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
             >
               <p className="text-ink-mid leading-relaxed mb-4">
-                Jestem otwarty na rozmowę o tym, w jakim obszarze mógłbym najlepiej wesprzeć JOSKIN Polska. Najnaturalniej odnajduję się tam, gdzie spotykają się komunikacja, multimedia, dokumentacja i praca wielojęzyczna.
+                Jestem otwarty na rozmowę o tym, w jakim obszarze mógłbym najlepiej wesprzeć JOSKIN Polska. Najwięcej wnoszę tam, gdzie spotykają się komunikacja, multimedia, dokumentacja i praca wielojęzyczna.
               </p>
               <p className="text-ink-mid leading-relaxed">
                 Chętnie opowiem szerzej o swoim doświadczeniu, sposobie pracy i o tym, jak mój profil może przełożyć się na konkretne wsparcie zespołu w tej roli albo na styku kilku obszarów.
@@ -134,7 +134,7 @@ export default function Contact() {
                 ))}
               </div>
               <p className="text-sm text-ink-mid leading-relaxed mt-6 pt-5 border-t border-rule/80">
-                Najmocniej odnajduję się tam, gdzie łączą się treści produktowe, komunikacja techniczna, multimedia i współpraca z różnymi działami.
+                Najwięcej mogę wnieść tam, gdzie łączą się treści produktowe, komunikacja techniczna, multimedia i współpraca z różnymi działami.
               </p>
             </motion.div>
           </motion.div>
