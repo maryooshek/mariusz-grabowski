@@ -44,7 +44,7 @@ export default function Languages() {
                 Wielojęzyczność to fundament mojej kariery. Angielski jest moim codziennym językiem pracy od 2004 roku, między innymi w Xerox UK, Oxford Conversis i Cardno. Czeski rozwijałem podczas studiów na Uniwersytecie Karola w Pradze.
               </p>
               <p>
-                W kontekście JOSKIN szczególnie istotny jest dla mnie mocny angielski, a czeski i rosyjski stanowią dodatkowe wsparcie komunikacyjne. Niemiecki pozostaje na poziomie podstawowym, więc traktuję go jako obszar do dalszego rozwoju.
+                W kontekście JOSKIN szczególnie istotne są dla mnie angielski jako główny język pracy oraz czeski jako praktyczne wsparcie komunikacyjne w regionie. Rosyjski pozostaje dodatkową kompetencją przydatną w szerszym kontekście Europy Wschodniej i pracy z materiałami wielojęzycznymi. Niemiecki traktuję jako obszar do dalszego rozwoju.
               </p>
             </div>
 

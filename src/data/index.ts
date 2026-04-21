@@ -29,7 +29,7 @@ export const roleMatchData = [
       'Wsparcie przy targach branżowych — doświadczenie z International Fair of Pomorze & Kujawy oraz projektami Cardno',
     ],
     transferable: [
-      'Czeski i rosyjski na poziomie B2 oraz niemiecki na poziomie podstawowym wzmacniają profil językowy, choć moim najmocniejszym językiem roboczym pozostaje angielski',
+      'Czeski na poziomie B2 wzmacnia praktyczne dopasowanie regionalne, a rosyjski pozostaje dodatkową kompetencją przydatną w szerszym kontekście Europy Wschodniej i pracy z materiałami wielojęzycznymi',
       'Precyzja i rzetelność — praca z dokumentacją medyczną i techniczną wymagała najwyższych standardów jakości',
       'Efektywne zarządzanie czasem i terminowość w złożonych, wielostronnych projektach',
       'Swoboda w MS Office i narzędziach biurowych jako baza codziennej pracy dokumentacyjnej',
@@ -100,7 +100,7 @@ export const strengthsData = [
   {
     icon: 'Languages',
     title: 'Komunikacja Wielojęzyczna',
-    text: 'Polski (ojczysty), angielski (biegły), czeski i rosyjski (B2). Wieloletnia praca przy materiałach przygotowywanych dla wielu rynków i odbiorców językowych.',
+    text: 'Polski (ojczysty), angielski (biegły), czeski i rosyjski (B2). Profil językowy zbudowany wokół codziennej pracy po angielsku, regionalnego wsparcia czeskiego i dodatkowej kompetencji przydatnej w szerszym kontekście Europy Wschodniej.',
     color: 'green' as const,
   },
   {
@@ -280,7 +280,7 @@ export const skillGroupsData = [
     icon: 'Globe',
     color: 'amber' as const,
     tier: 'core' as const,
-    description: 'Zaplecze do pracy z treściami dla różnych rynków: komunikacja, adaptacja materiałów, lokalizacja i sprawne poruszanie się w środowisku wielojęzycznym.',
+    description: 'Zaplecze do pracy z treściami dla różnych rynków: komunikacja, adaptacja materiałów, lokalizacja i sprawne poruszanie się w środowisku wielojęzycznym, także w szerszym kontekście Europy Wschodniej.',
     skills: ['Angielski', 'Czeski', 'Rosyjski', 'Lokalizacja', 'Wielojęzyczny DTP', 'Transkreacja', 'Adaptacja kulturowa', 'Materiały dla wielu rynków'],
   },
   {
@@ -352,7 +352,7 @@ export const languagesData = [
     percentage: 70,
     flag: '🇷🇺',
     color: 'amber' as const,
-    note: 'Poziom średniozaawansowany wyższy',
+    note: 'Dodatkowa kompetencja przydatna w szerszym kontekście Europy Wschodniej',
   },
   {
     language: 'Niemiecki',
@@ -437,7 +437,7 @@ export const joskinPointsData = [
   {
     icon: 'Globe',
     title: 'Wielojęzyczność jako kapitał operacyjny',
-    text: 'W pracy dla JOSKIN mógłbym realnie wykorzystać angielski jako mocny język roboczy, a czeski i rosyjski jako dodatkowe wsparcie komunikacyjne. To praktyczna wartość w środowisku wielojęzycznym i międzydziałowym.',
+    text: 'W pracy dla JOSKIN mógłbym realnie wykorzystać angielski jako mocny język roboczy, czeski jako praktyczne wsparcie komunikacyjne w regionie, a rosyjski jako dodatkową kompetencję przydatną w szerszym kontekście Europy Wschodniej. To praktyczna wartość w środowisku wielojęzycznym i międzydziałowym.',
     color: 'green' as const,
   },
   {
