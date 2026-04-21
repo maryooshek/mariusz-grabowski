@@ -96,26 +96,21 @@ export default function Strengths() {
                 Najmocniej pracuję tam, gdzie trzeba połączyć treść, obraz, strukturę i praktyczne zrozumienie odbiorcy.
               </p>
 
-              <div className="mt-8 pt-6 border-t border-rule/80 grid sm:grid-cols-3 gap-5">
-                {[['20+', 'lat doświadczenia'], ['4', 'języki robocze'], ['od 2004', 'angielski w codziennej pracy']].map(([v, l]) => (
-                  <div key={l}>
-                    <span
-                      className="block font-cormorant font-semibold text-field leading-none"
-                      style={{ fontSize: 'clamp(28px, 3vw, 42px)' }}
-                    >
-                      {v}
-                    </span>
-                    <span className="block mt-2 font-mono text-2xs uppercase tracking-widest text-ink-light">{l}</span>
-                  </div>
-                ))}
-              </div>
-
               <div className="mt-8 text-sm text-ink-mid leading-relaxed space-y-4">
                 <p>
                   To nie jest zbiór oderwanych kompetencji. To warsztat zbudowany przez lata pracy przy materiałach, które musiały być jednocześnie czytelne, estetyczne, poprawne i gotowe do użycia w różnych środowiskach.
                 </p>
                 <p>
                   W praktyce oznacza to swobodę poruszania się między komunikacją wizualną, dokumentacją, multimediami, lokalizacją i publikacją cyfrową bez utraty jakości ani porządku pracy.
+                </p>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-rule/80">
+                <p className="font-mono text-2xs uppercase tracking-widest text-ink-light mb-3">
+                  Jak przekłada się to na pracę
+                </p>
+                <p className="text-sm text-ink-mid leading-relaxed">
+                  Oznacza to umiejętność łączenia precyzji wykonania z czytelnością przekazu, sprawnej pracy między działami oraz zamieniania złożonych informacji w materiały, które są użyteczne, estetyczne i gotowe do publikacji.
                 </p>
               </div>
             </motion.div>

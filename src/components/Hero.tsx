@@ -175,7 +175,7 @@ export default function Hero() {
               {[ 
                 { n: '20+', l: 'lat doświadczenia' },
                 { n: '4', l: 'języki robocze' },
-                { n: '3', l: 'obszary dopasowania' },
+                { n: 'B i T', l: 'prawo jazdy' },
               ].map((s, i) => (
                 <motion.div
                   key={s.l}

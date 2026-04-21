@@ -62,7 +62,7 @@ export default function Experience() {
               <div className="mt-8 pt-6 border-t border-rule/80 grid sm:grid-cols-3 gap-5">
                 {[
                   ['20+', 'lat doświadczenia'],
-                  ['4', 'języki robocze'],
+                  ['7', 'kluczowych etapów kariery'],
                   ['od 2004', 'angielski w codziennej pracy'],
                 ].map(([value, label]) => (
                   <div key={label}>
